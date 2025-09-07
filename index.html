@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Citas - Uñas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Agenda tu cita para uñas</h1>
+    </header>
+
+    <section id="formulario-cita">
+        <h2>Datos de la cita</h2>
+        <form id="cita-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required><br><br>
+
+            <label for="tipo-servicio">Tipo de servicio:</label>
+            <select id="tipo-servicio" name="tipo-servicio" required>
+                <option value="">Selecciona un servicio</option>
+                <option value="gelish">Gelish</option>
+                <option value="acrilico">Acrilico</option>
+                <option value="manicura-pedicura">Manicura y Pedicura</option>
+                <!-- Agrega más opciones según sea necesario -->
+            </select><br><br>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required><br><br>
+
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required><br><br>
+
+            <label for="comentarios">Comentarios adicionales:</label><br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+            <button type="submit">Agendar cita</button>
+        </form>
+    </section>
+
+    <footer>>Información de contacto y derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
